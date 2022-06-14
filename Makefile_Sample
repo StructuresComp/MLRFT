@@ -1,0 +1,2 @@
+MLRFT:main.cpp world.cpp elasticRod.cpp elasticStretchingForce.cpp elasticBendingForce.cpp elasticTwistingForce.cpp externalGravityForce.cpp inertialForce.cpp dampingForce.cpp timeStepper.cpp setInput.cpp RegularizedStokeslet.cpp externalContactForce.cpp
+	g++ -I /usr/local/include/eigen3/ main.cpp world.cpp elasticRod.cpp elasticStretchingForce.cpp elasticBendingForce.cpp elasticTwistingForce.cpp externalGravityForce.cpp inertialForce.cpp dampingForce.cpp timeStepper.cpp setInput.cpp RegularizedStokeslet.cpp externalContactForce.cpp -llapack -lGL -lglut -lGLU -Ofast -o MLRFT
