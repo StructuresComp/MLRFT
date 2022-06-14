@@ -28,25 +28,47 @@ Option.txt files:
 Example: ./MLRFT option.txt -- RodLength 0.2
 
 (4) Details on the options (we use SI units): 
+
     "helixradius" is the radius of the helix.
+    
     "helixpitchRatio" is the value of helixpitch / helixradius.
+    
     "rodRadiusRatio" is the value of helixradius / rodRadius.
+    
     "contourRatio" is the value of flagellaLength / helixradius.
+    
     "youngM" is the young's modulus.
+    
     "Poisson" is the Poisson ratio.
+    
     "deltaTime" is the time step size.
+    
     "totalTime" is the time at which the simulation ends.
+    
     "tol" and "stol" are small numbers used in solving the linear system. Fraction of a percent, e.g. 1.0e-3, is often a good choice.
+    
     "maxIter" is the maximum number of iterations allowed before the solver quits.
+    
     "maxIterContact" is the maximum number of iterations allowed before the contact exits the loop.
+    
     "density" is the mass per unit volume.
+    
     "gVector" is the vector specifying acceleration due to gravity.
+    
     "viscosity" is the viscosity of the fluid medium.
+    
     "render" (0 or 1) indicates whether OpenGL visualization should be displayed.
+    
     "saveData" (0 or 1) indicates whether the location of the head should be saved in "datafiles/" folder (this folder will be created by the program).
+    
     "input-file" is the name of the file that provides the time series of angular/translational velocity (as mentioned above).
+    
     "use-RSS" is a boolean variable. If true, RSS will be used. 
+    
     "use-RFT" is a boolean variable. If true, RFT will be used. See "Propulsion of microorganisms by a helical flagellum" for expressions of eta_par and eta_per in Gray and Hancock model.
+    
      * if both "use-RSS", and "use-RFT" are false, then MLRFT is activated
+     
     "translation" is a bollean variable. If true translation will be active. The input-file needs to be in m/s of translation. If false, rotation will be active and requires corresponding input-file.
+    
     "include-contact" is a boolean variable. If true, contact will be included. Otherwise, contact will be neglected.
