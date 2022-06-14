@@ -9,7 +9,9 @@ Instructions for Ubuntu:
 Lapack is usually preinstalled on your computer. 
 Eigen can be found at http://eigen.tuxfamily.org/index.php?title=Main_Page
 For libtensorflow and cppflow installation, please refer to https://serizba.github.io/cppflow/
- 
+
+(2) Make sure to change the path of the trained model is defined as a full path within your local directory. The model path change needs to be done in world.cpp file.
+
 (2) Create a file named "Makefile". The content of the "Makefile" should be the same "Makefile" except that you will need to change the path to eigen, path to libtensorflow, and path to cppflow from the existing Makefile sample shown in this code to the local path of system.
 
 (3) Open a terminal, "cd" to this folder and run the command "make" (without the quotes).
