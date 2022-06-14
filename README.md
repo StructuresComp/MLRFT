@@ -1,6 +1,6 @@
 ## MLRFT
 
-#Compile and build:
+Compile and build:
 ------------------
 
 Instructions for Ubuntu:
@@ -17,7 +17,7 @@ For libtensorflow and cppflow installation, please refer to https://serizba.gith
 (4) To start the simulation, run the command "./MLRFT optionMLRFT_Translation.txt" (without the quotes). More on option.txt below.
 
 
-#Option.txt files:
+Option.txt files:
 ------------------
 (1) Angular/Linear velocity: a text file, e.g. omega.txt, should contain two columns: one column is the start time and second column is the angular velocity (rpm) or linear velocity (m/s). This is essentially the time series of the angular/linear velocity.
 (2) The name of this input file should be specified in "option.txt" file under the option name "input-file". This option.txt should be specified while running the simulation, i.e. ./MLRFT option.txt
