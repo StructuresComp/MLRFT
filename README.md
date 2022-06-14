@@ -1,4 +1,4 @@
-## MLRFT
+# MLRFT
 
 Compile and build:
 ------------------
@@ -20,10 +20,13 @@ For libtensorflow and cppflow installation, please refer to https://serizba.gith
 Option.txt files:
 ------------------
 (1) Angular/Linear velocity: a text file, e.g. omega.txt, should contain two columns: one column is the start time and second column is the angular velocity (rpm) or linear velocity (m/s). This is essentially the time series of the angular/linear velocity.
+
 (2) The name of this input file should be specified in "option.txt" file under the option name "input-file". This option.txt should be specified while running the simulation, i.e. ./MLRFT option.txt
+
 (3) You can edit the parameters of the simulation by editing "option.txt" file. You can also specify an option using the following syntax:
 ./MLRFT option.txt -- option_name option_value
 Example: ./MLRFT option.txt -- RodLength 0.2
+
 (4) Details on the options (we use SI units): 
     "helixradius" is the radius of the helix.
     "helixpitchRatio" is the value of helixpitch / helixradius.
